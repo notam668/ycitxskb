@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="全校课表查询：按班级或教师快速查看每周课程安排" />
+    <meta name="description" content="全校课表查询：按班级快速查看每周课程安排" />
     <meta name="theme-color" content="#0d8ce9" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -33,6 +33,12 @@
     <!-- 本地嵌入数据，离线或直接双击 file:// 打开时零跨域问题、零加载错误 -->
     <script src="./local_data.js"></script>
     <link rel="stylesheet" href="./assets/index-D-3bZVw4.css">
+    <style>
+      /* 隐藏按教师查询切换选项栏，仅保留班级查询 */
+      [role="tablist"] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
